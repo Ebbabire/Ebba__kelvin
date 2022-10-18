@@ -19,7 +19,7 @@ label {
     padding: 15px;
     font-size: 20px;
 }
-option {
+select {
      padding: 10px;
     border-radius:5px ;
     border:none;
