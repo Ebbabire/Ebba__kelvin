@@ -6,6 +6,9 @@
     color: blue;
     margin: 20px;
     padding: 20px;
+    margin: auto auto;
+    max-width: 50vw;
+    height: 100%;
 }
 input{
     padding: 10px;
