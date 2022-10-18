@@ -16,19 +16,70 @@
             <input type="text" placeholder="Enter your name">
             <label for="email">Email</label>
             <input type="email" placeholder="Enter your email">
-            <label>Age</label>
+            <label>Age<span class="clue">(optional)</span></label>
             <input type="number" placeholder="Enter your age">
-            <label>Which option best describes your current role?</label>
-            <input type="text" placeholder="Select current role">
+
+
+            <div class="group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="groupform" required="">
+                    <option disabled="" selected="" value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
 
             <div class="radio">
                 <h3>Would you recommend freeCodeCamp to a friend?</h3>
+                <input type="radio" checked>
+                <label>Definitley</label><br />
                 <input type="radio">
-                <label>Definitley</label>
+                <label>Maybe</label><br />
                 <input type="radio">
-                <label>Maybe</label>
-                <input type="radio">
-                <label>Not Sure</label>
+                <label>Not Sure</label><br />
+            </div>
+
+            <div class="group">
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select id="most-like" name="mostLike" class="groupform" required="">
+                    <option disabled="" selected="" value="">Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+
+            <div class="radio">
+                <h3>What would you like to see improved?<span class="clue">(Check all that apply)</span></h3>
+                <input type="checkbox">
+                <label>Front-end Projects</label><br />
+                <input type="checkbox">
+                <label>Back-end Projects</label><br />
+                <input type="checkbox">
+                <label>Data Visualization</label><br />
+                <input type="checkbox">
+                <label>Challenges</label><br />
+                <input type="checkbox">
+                <label>Open Source Community</label><br />
+                <input type="checkbox">
+                <label>Gitter help rooms</label><br />
+                <input type="checkbox">
+                <label>Videos</label><br />
+                <input type="checkbox">
+                <label>City Meetups</label><br />
+            </div>
+
+            <div class="group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="group">
+                <button id="submit" type="submit" class="submit-button">Submit</button>
             </div>
         </div>
 
